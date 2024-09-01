@@ -1,0 +1,245 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    rgb(18, 4, 42),
+    rgb(74, 19, 111)
+  );
+  /* background:linear-gradient(to bottom right,rgb(0, 0, 0),rgb(67, 13, 104));    */
+  /* rgb(60, 3, 97) */
+  height: auto;
+  font-size: 30px;
+  color: aliceblue;
+}
+.nav {
+  background-color: rgb(7, 67, 116);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+a {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 10px 50px 2px 50px;
+}
+a:hover {
+  color: coral;
+}
+
+/* overview  */
+.overview_main_div {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  overflow: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.bg-image {
+  height: 50vh; /* Adjust as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url("images/bg.jpg");
+}
+
+.img2 {
+  background-image: url("images/google_logo.jpg");
+}
+
+.img3 {
+  background-image: url("images/bg.jpg");
+}
+
+.img4 {
+  background-image: url("images/image.jpeg");
+}
+
+.img5 {
+  background-image: url("images/water1.jpg");
+}
+
+.img6 {
+  background-image: url("images/image.jpg");
+}
+
+.bg-text {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  margin-left: 45%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border: 10px solid #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  z-index: 2; /* Ensure it's above background images */
+  pointer-events: none; /* Prevents the text from capturing mouse events */
+}
+
+/* more info */
+.more_ref_li {
+  color: pink;
+  text-align: center;
+}
+.moreInfo {
+  text-align: center;
+  background-color: black;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.outer_more_info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.more_ref_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 10px; /* Adjusts spacing between links */
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  text-align: center;
+  color: rgb(60, 3, 97);
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(33% - 2rem);
+
+  box-shadow: 0 4px 0px rgba(2, 63, 218, 0.4);
+
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.sevicesP {
+  font-size: 20px;
+}
+
+/* welcome */
+
+.main_welcome_div {
+  background-color: rgb(55, 55, 75);
+  height: auto;
+  padding: 20px;
+}
+.welcome {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(85, 85, 118);
+  height: 200px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto; /* Centers the div horizontally */
+  position: relative;
+}
+
+.name_company {
+  margin-bottom: 1rem;
+  animation: fadeInDown 2s;
+  color: transparent;
+  /* text-shadow: 5px 10px 3px rgba(35, 1, 253, 0.19); */
+  text-shadow: 5px 10px 3px rgba(1, 173, 253, 0.19);
+  font-size: 66px;
+  background: linear-gradient(to right, rgb(152, 221, 248), rgb(246, 99, 246));
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+}
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  box-shadow: 4px 4px 4px rgba(165, 227, 247, 0.769);
+  border-radius: 10px;
+  /* border: 2px solid rgba(5, 183, 242, 0.362); */
+}
+#welcome_in {
+  color: wheat;
+  margin-bottom: 2rem;
+  animation: fadeInUp 2s;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.choosePage {
+  text-align: center;
+  height: 50px;
+}
+.choosePage button {
+  font-size: 20px;
+  height: 32px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: linear-gradient(to bottom, rgb(134, 223, 252), rgb(189, 68, 241));
+}
+.choosePage button:hover {
+  background: linear-gradient(to bottom, rgb(94, 208, 246), rgb(177, 19, 246));
+  cursor: pointer;
+  height: 35px;
+  font-weight: 500;
+}
+
+#footer {
+  color: beige;
+  background-color: rgb(7, 67, 116);
+  font-size: 15px;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  height: 25px;
+  z-index: 1000;
+}

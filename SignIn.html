@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="SignIn.css" />
+    <link rel="icon" href="images\XYZ_logo.jpg" />
+  </head>
+  <body>
+    <div class="nav">
+      <a href="Index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="page1.html">Page1</a>
+      <a href="Forum.php">Forums</a>
+    </div>
+    <br />
+    <br />
+    <h1>Sign In</h1>
+    <div class="my_form">
+      <div class="form">
+        <br />
+
+        <form
+          id="form_Register"
+          action="SignIn.php"
+          method="post"
+          onsubmit="return validateForm()"
+        >
+          <div class="form-group">
+            <label for="employee_Id">employee_Id</label>
+            <input type="number" id="employee_Id" name="employee_Id" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <br />
+          <button id="submit" type="submit">Sign In</button>
+          <br />
+          <button id="reset" type="reset">Reset</button>
+          <br /><br />
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <div id="footer">© 2024 JAMS Company. All rights reserved</div>
+  </body>
+</html>

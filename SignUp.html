@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="SignUp.css" />
+    <link rel="icon" href="images\XYZ_logo.jpg" />
+  </head>
+  <body>
+    <div class="nav">
+      <a href="Index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="page1.html">Page1</a>
+      <a href="Forum.php">Forums</a>
+    </div>
+    <br />
+    <br />
+
+    <form
+      id="create-account-form"
+      action="SignUp.php"
+      method="post"
+      onsubmit="return validateForm()"
+    >
+      <h1>Register</h1>
+      <div class="my_form">
+        <div class="form">
+          <br /><br />
+          <div class="form-group">
+            <label for="employee_Id">employee_Id</label>
+            <input type="number" id="employee_Id" name="employee_Id" required />
+          </div>
+          <div class="form-group">
+            <label for="f_name">Username (first name)</label>
+            <input type="text" id="f_name" name="f_name" required />
+          </div>
+          <div class="form-group">
+            <label for="l_name">Last name:</label>
+            <input type="text" id="l_name" name="l_name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">confirm-password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dob">D.O.B:</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+          <div class="form-group">
+            <label for="gender">gender:</label><br />
+            <select id="gender" name="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option></select
+            ><br /><br />
+          </div>
+          <div class="form-group">
+            <label for="phone">phone</label>
+            <input type="number" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label><br />
+            <select id="country" name="country">
+              <option value="India">India</option>
+              <option value="Iraq">Iqa</option>
+              <option value="Egipt">Egypt</option>
+              <option value="U.K">U.K</option>
+              <option value="Chard">Chard</option></select
+            ><br /><br />
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required />
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required />
+          </div>
+          <div class="form-group">
+            <label for="pincode">pincode</label>
+            <input type="pincode" id="pincode" name="pincode" required />
+          </div>
+          <div class="form-group">
+            <label for="date_of_signUp">date_of_signUp</label>
+            <input
+              type="date"
+              id="date_of_signUp"
+              name="date_of_signUp"
+              required
+            />
+          </div>
+          <hr />
+          <div class="form-group" style="display: inline">
+            <input
+              type="checkbox"
+              id="accept-policies"
+              name="accept-policies"
+              required
+              style="display: inline"
+            />
+            <label for="accept-policies" style="display: inline"
+              >I accept the<a href="policies.html" target="_blank" id="policies"
+                >policies</a
+              ></label
+            >
+          </div>
+          <br /><br />
+          <button id="submit" type="submit">Create Account</button>
+          <button id="reset" type="reset">Reset form</button>
+
+          <br />
+        </div>
+        <br />
+      </div>
+    </form>
+    <br /><br />
+    <div id="footer">© 2024 JAMS Company. All rights reserved</div>
+    <script src="signUp.js"></script>
+  </body>
+</html>

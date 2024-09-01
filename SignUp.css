@@ -1,0 +1,89 @@
+body
+{
+    background:linear-gradient(to bottom right,rgb(177, 241, 153),rgb(247, 156, 215));    
+    /* rgb(60, 3, 97) */
+    height: auto;
+    font-size: 25px;
+    color:rgb(131, 4, 87);
+ 
+}
+.nav
+{
+    
+    background-color: rgb(7, 67, 116);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    padding-left: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+a{
+
+    color: rgb(166, 228, 252);
+    padding-left: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: coral;
+}
+#submit
+{
+    background-color: chartreuse;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.form
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 400PX;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px;
+}
+.my_form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    color: rgb(64, 122, 6);
+    position: relative;
+    left:80vh;
+    font-size: 50px;
+}
+#reset
+{
+    background-color: rgb(236, 66, 210);
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 10px;
+}
+#policies
+{
+    text-decoration: underline;
+}
+#footer
+{
+    color: beige;
+    background-color: rgb(7, 67, 116);
+    font-size: 15px;
+    width: 100%; 
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    height: 25px;
+    z-index: 1000;
+}
